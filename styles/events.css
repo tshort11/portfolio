@@ -1,162 +1,247 @@
 :root {
-    --background-image: url(../images/Background.jpg);
-    --primary-background: #FFF4F4;
-  }
-  
-  * {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    height: 100%;
-    background-image: var(--background-image);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  
-  .article {
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  header {
-    background-color: var(--primary-background);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
-  }
-  
-  .name {
-    display: center;
-    font-size: 56px;
-  }
-  
+  --background-image: url(../images/Background.jpg);
+  --primary-background: #FFF4F4;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: var(--primary-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav {
+  font-size: 24px;
+  width: 100%;
+  background-color: var(--primary-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #090101;
+  font-size: 24px;
+}
+
+nav li a:hover {
+  top: -2px;
+  font-size: 26px;
+  text-decoration: underline;
+}
+
+nav li a.connect {
+  color: #090101;
+  font-size: 24px;
+  font-weight: bold;
+  border: 2px solid #333;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #9BEC9E;
+  box-shadow: 3px 3px 3px #090101;
+}
+
+.name {
+  display: center;
+  font-size: 56px;
+}
+
+.flexbox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+}
+
+.intro {
+  margin: 10px;
+  text-align: center;
+  color: #090101;
+  font-size: 32px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 12px;
+  background-color: #9BEC9E;
+  box-shadow: 3px 3px 3px #090101;
+  display: inline-block;
+  position: relative;
+}
+
+.register {
+  text-align: center;
+  font-size: 36px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  max-width: 600px;
+  width: 100%;
+  background-color: #9BEC9E;
+  border: 2px solid #090101;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px #090101;
+  padding: 20px;
+  position: relative;
+}
+
+.form label {
+  font-size: 16px;
+  color: #090101;
+}
+
+.form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #090101;
+  border-radius: 4px;
+}
+
+.form button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: var(--primary-background);
+  color: #090101;
+  padding: 10px;
+}
+
+
+@media (max-width: 768px) {
   nav {
-    font-size: 28px;
-    position: relative;
-    width: 100%;
-    background-color: var(--primary-background);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
+    font-size: 20px;
   }
-  
+
   nav ul {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin: 0;
-    padding: 10px;
-    list-style: none;
+    flex-direction: column;
+    padding: 0;
   }
-  
+
   nav li {
-    margin: 0 15px;
+    margin: 8px 0;
   }
-  
-  nav li a {
-    text-decoration:none;
-    color: #090101;
-    font-size: 24px;
-  }
-  
-  nav li a:hover {
-    top: -2px;
-    font-size: 26px;
-    text-decoration: underline;
-  }
-  
-  nav li a.connect {
-    color: #090101;
-    font-size: 24px;
-    font-weight: bold;
-    border: 2px solid #333;
-    border-radius: 4px;
-    padding: 10px;
-    background-color: #9BEC9E;
-    box-shadow: 3px 3px 3px #090101;
+
+  .name {
+    font-size: 48px;
   }
 
   .flexbox-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    padding: 20px;
+    padding: 15px;
+    gap: 15px;
   }
 
   .intro {
-    margin: 10px;
-    text-align: center;
-    color: #090101;
-    font-size: 32px;
-    border: 2px solid #333;
-    border-radius: 10px;
-    padding: 12px;
-    background-color: #9BEC9E;
-    box-shadow: 3px 3px 3px  #090101;
-    display: inline-block;
-    position: relative;
+    font-size: 28px;
+    padding: 10px;
   }
 
   .register {
-    text-align: center;
-    font-size: 36px;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 22px; 
-    max-width: 600px; 
-    width: 100%;
-    background-color: #9BEC9E;
-    border: 2px solid #090101;
-    border-radius: 8px;
-    box-shadow: 2px 2px 2px #090101;
-    padding: 20px;
-    position: relative;
-  }
-  
-  .form label {
-    font-size: 16px;
-    color: #090101;
-  }
-  
-  .form input {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #090101;
-    border-radius: 4px;
-  }
-  
-  .form button {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 10px;
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .form button:hover {
-    background-color: #45a049;
+    font-size: 30px;
   }
 
-  footer {
-    background-color: var(--primary-background);
-    color: #090101;
+  .form {
+    max-width: 500px;
+    padding: 15px;
+  }
+
+  .form label {
+    font-size: 14px;
+  }
+
+  .form input, .form button {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  nav {
+    font-size: 18px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav li {
+    margin: 6px 0;
+  }
+
+  .name {
+    font-size: 36px;
+  }
+
+  .flexbox-container {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .intro {
+    font-size: 24px;
+    padding: 8px;
+  }
+
+  .register {
+    font-size: 24px;
+  }
+
+  .form {
+    max-width: 100%;
     padding: 10px;
   }
+
+  .form label {
+    font-size: 12px;
+  }
+
+  .form input, .form button {
+    font-size: 12px;
+  }
+}

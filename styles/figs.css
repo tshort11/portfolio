@@ -1,0 +1,129 @@
+:root {
+    --background-image: url(../images/Background.jpg);
+    --primary-background: #FFF4F4;
+  }
+  
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  header {
+    background-color: var(--primary-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  nav {
+    font-size: 24px;
+    width: 100%;
+    background-color: var(--primary-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+  }
+  
+  nav li {
+    margin: 0 15px;
+  }
+  
+  nav li a {
+    text-decoration: none;
+    color: #090101;
+    font-size: 24px;
+  }
+  
+  nav li a:hover {
+    top: -2px;
+    font-size: 26px;
+    text-decoration: underline;
+  }
+  
+  nav li a.connect {
+    color: #090101;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #333;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #9BEC9E;
+    box-shadow: 3px 3px 3px #090101;
+  }
+  
+  .name {
+    display: center;
+    font-size: 56px;
+  }
+  
+  
+    .flexbox-container {
+      margin: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: auto;
+      gap: 50px;
+      padding: 35px;
+    }
+  
+  
+    .title {
+      margin: 10px;
+      text-align: center;
+      color: #090101;
+      font-size: 32px;
+      border: 2px solid #333;
+      border-radius: 12px;
+      padding: 12px;
+      background-color: #9BEC9E;
+      box-shadow: 3px 3px 3px  #090101;
+      display: inline-block;
+    }
+  
+    .text {
+      margin: 18px;
+      width: 80%;
+      text-align: center;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*change this*/
+      color: #090101;
+      font-size: 24px;
+      border: 2px solid #090101;
+      border-radius: 12px;
+      padding: 42px;
+      background-color: #9BEC9E;
+      box-shadow: 3px 3px 3px #090101;
+      display: inline-block;
+      position: relative; 
+    }
+  
+    
+    footer {
+      background-color: var(--primary-background);
+      color: #090101;
+      padding: 10px;
+    }
