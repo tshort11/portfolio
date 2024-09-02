@@ -3,17 +3,16 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/connect.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <title>Tamika Short</title>
 </head>
 <body>
   <header>
-    <h1>Tamika Short</h1>
+    <h1 class="name">Tamika Short</h1>
     <nav>
-        <label for="menu-toggle" class="menu-icon">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </label>
+      <input type="checkbox" id="menu-toggle" style="display: none;"/>
+      <label for="menu-toggle" class="menu-icon"><span class="material-icons">menu</span></label>
         <ul class="nav-links" id="nav-links">
           <li><a href="../pages/home.html">Home</a></li>
           <li><a href="../pages/about.html">About</a></li>
@@ -28,9 +27,17 @@
     <div class="flexbox-container">
         <p class="faq-title"><h1>FAQ</h1></p>
         <section class="faq-item">
-            <h4 class="question">What is the easiest way to contact you?</h4>
-            <hr>
-            <p>Please find the most effective way to connect with me through the three platforms that I’ll link below.</p><hr>
+          <h4 class="question">What is the easiest way to contact you?</h4>
+          <hr>
+          <p>Please find the most effective way to connect with me through the three platforms that I’ll link below.</p>
+          <div class="icon-container">
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://github.com/tshort11" target="_blank" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            <br><br></div>
+            <a>or my email:<br>
+            tamikashortcode@gmail.com</a> 
+          <hr>
             <h4 class="question">What programming languages are you currently most confident in?</h4>
             <hr>
             <p>My go-to toolkit for web experiences and solving coding challenges includes:</p>
@@ -49,19 +56,19 @@
           <h5>Want to get in touch?</h5>
         </section> 
         <label for="name">Name</label>
-        <input type="text" id="name" name="name">  
+        <input type="text" id="name" name="name" placeholder="Jane Smith">  
         <label for="email">Email</label>
-        <input type="email" id="email" name="email">    
+        <input type="email" id="email" name="email" placeholder="example@email.com">    
         <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject">  
+        <input type="text" id="subject" name="subject" placeholder="Fruit Fallacy">  
         <label for="type">Type here</label>
-        <textarea id="type" name="type" cols="30" rows="10"></textarea>
+        <textarea id="type" name="type" cols="30" rows="10" placeholder="Hi! I'm writing about.."></textarea>
         <button type="submit">Submit</button>
       </form>
     </div>
   </main>
   <footer>
-    <p class="copyright">Tamika Short</p>
+    <p>Tamika Short<br>tamikashortcode@gmail.com</p>
   </footer>
 </body>
 </html>

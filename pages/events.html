@@ -3,17 +3,15 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/events.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
   <title>Tamika Short</title>
 </head>
 <body>
   <header>
-    <h1>Tamika Short</h1>
+    <h1 class="name">Tamika Short</h1>
     <nav>
-        <label for="menu-toggle" class="menu-icon">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </label>
+      <input type="checkbox" id="menu-toggle" style="display: none;"/>
+      <label for="menu-toggle" class="menu-icon"><span class="material-icons">menu</span></label>
         <ul class="nav-links" id="nav-links">
           <li><a href="../pages/home.html">Home</a></li>
           <li><a href="../pages/about.html">About</a></li>
@@ -30,21 +28,21 @@
         <form class="form">
           <section class="register">Register now!</section>
             <label for="first-name">First Name</label>
-            <input type="text" id="first-name">
+            <input type="text" id="first-name" placeholder="Jane">
             <label for="last-name">Last Name</label>
-            <input type="text" id="last-name">
+            <input type="text" id="last-name" placeholder="Smith">
             <label for="mobile">Mobile</label>
-            <input type="text" id="mobile">
+            <input type="text" id="mobile" placeholder="0400 000 000">
             <label for="email">Email</label>
-            <input type="email" id="Email">
+            <input type="email" id="Email" placeholder="example@email.com">
             <label for="State">State/Online Updates preference</label>
-            <input type="text" id="state"><br><br>
+            <input type="text" id="state" placeholder="Victoria ONLY"><br><br>
             <button type="submit">Submit</button>
         </form>
     </div>
   </main>
   <footer>
-    <p class="copyright">Tamika Short</p>
+    <p>Tamika Short<br>tamikashortcode@gmail.com</p>
   </footer>
 </body>
 </html>

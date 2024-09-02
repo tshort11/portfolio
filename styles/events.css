@@ -37,6 +37,7 @@ nav {
   padding: 10px 0;
 }
 
+
 nav ul {
   display: flex;
   justify-content: space-around;
@@ -59,7 +60,11 @@ nav li a {
 nav li a:hover {
   top: -2px;
   font-size: 26px;
-  text-decoration: underline;
+  text-decoration: none;
+  color: transparent;
+  background-image: var(--background-image);
+  opacity: 75%;
+  background-clip: text;
 }
 
 nav li a.connect {
@@ -76,6 +81,16 @@ nav li a.connect {
 .name {
   display: center;
   font-size: 56px;
+  background-image: var(--background-image);
+  font-weight: bold;
+  background-clip: text;
+  color: transparent;
+  animation: moveBackground 3s infinite;
+}
+
+
+.menu-icon {
+  display: none;
 }
 
 .flexbox-container {
@@ -135,6 +150,7 @@ nav li a.connect {
 
 .form button {
   padding: 10px;
+  align-items: center;
   font-size: 16px;
   border-radius: 10px;
   background-color: #4CAF50;
@@ -154,94 +170,125 @@ footer {
 
 
 @media (max-width: 768px) {
-  nav {
-    font-size: 20px;
-  }
 
   nav ul {
+    display: none;
+  }
+
+  header {
+    border-bottom: 2px solid #090101;
+  }
+
+  .menu-icon {
+    display: flex;
     flex-direction: column;
-    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
   }
 
-  nav li {
-    margin: 8px 0;
+  
+  .menu-icon .material-icons {
+    font-size: 52px;
+    color: #090101;
   }
 
-  .name {
-    font-size: 48px;
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--primary-background);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    text-align: center;
+    border-bottom: 2px solid #090101;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+
+  .nav-links li {
+    margin: 14px 0;
+    font-size: 24px;
+    padding: 14px;
+  }
+
+  .nav-links li:not(:last-child):not(.connect) {
+    border-bottom: 1px solid #090101;
+  }  
+
+  .nav-links a {
+    color: #090101;
+  }
+ 
+  #menu-toggle:checked ~ #nav-links {
+    display: flex;
+  }
+
+
+  .menu-icon .bar {
+    background-color: #090101;
+    height: 6px;
+    width: 42px;
+    margin: 6px 0;
+    transition: 0.3s;
+  }
+
+  
+  #menu-toggle:checked ~ .menu-icon .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  #menu-toggle:checked ~ .menu-icon .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu-toggle:checked ~ .menu-icon .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
   }
 
   .flexbox-container {
-    padding: 15px;
-    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
   }
 
-  .intro {
-    font-size: 28px;
-    padding: 10px;
-  }
-
-  .register {
-    font-size: 30px;
-  }
-
-  .form {
-    max-width: 500px;
-    padding: 15px;
-  }
-
-  .form label {
-    font-size: 14px;
-  }
-
-  .form input, .form button {
-    font-size: 14px;
-  }
 }
 
 
 @media (max-width: 480px) {
-  nav {
-    font-size: 18px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    padding: 0;
-  }
-
-  nav li {
-    margin: 6px 0;
-  }
-
   .name {
-    font-size: 36px;
+    font-size: 45px;
+  }
+
+  .menu-icon {
+    font-size: 1.5rem;
+    color: #090101;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    top: 70px;
+  }
+
+  nav li a { /*text size*/
+    font-size: 24px;
   }
 
   .flexbox-container {
     padding: 10px;
-    gap: 10px;
+    gap: 20px;
   }
 
-  .intro {
-    font-size: 24px;
-    padding: 8px;
-  }
+}
 
-  .register {
-    font-size: 24px;
+@keyframes moveBackground {
+  0% {
+      background-position: 80% 100%;
   }
-
-  .form {
-    max-width: 100%;
-    padding: 10px;
-  }
-
-  .form label {
-    font-size: 12px;
-  }
-
-  .form input, .form button {
-    font-size: 12px;
+  100% {
+      background-position: 0% 90%;
   }
 }

@@ -1,84 +1,97 @@
 :root {
-    --background-image: url(../images/Background.jpg);
-    --primary-background: #FFF4F4;
-  }
-  
-  * {
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    height: 100%;
-    background-image: var(--background-image);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  
-  header {
-    background-color: var(--primary-background);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
-  }
-  
-  nav {
-    font-size: 24px;
-    width: 100%;
-    background-color: var(--primary-background);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
-    
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin: 0;
-    padding: 10px;
-    list-style: none;
-  }
-  
-  nav li {
-    margin: 0 15px;
-  }
-  
-  nav li a {
-    text-decoration: none;
-    color: #090101;
-    font-size: 24px;
-  }
-  
-  nav li a:hover {
-    top: -2px;
-    font-size: 26px;
-    text-decoration: underline;
-  }
-  
-  nav li a.connect {
-    color: #090101;
-    font-size: 24px;
-    font-weight: bold;
-    border: 2px solid #333;
-    border-radius: 4px;
-    padding: 10px;
-    background-color: #9BEC9E;
-    box-shadow: 3px 3px 3px #090101;
-  }
-  
-  .name {
-    display: center;
-    font-size: 56px;
-  }
-  
+  --background-image: url(../images/Background.jpg);
+  --primary-background: #FFF4F4;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: var(--primary-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav {
+  font-size: 24px;
+  width: 100%;
+  background-color: var(--primary-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #090101;
+  font-size: 24px;
+}
+
+nav li a:hover {
+  top: -2px;
+  font-size: 26px;
+  text-decoration: none;
+  color: transparent;
+  background-image: var(--background-image);
+  opacity: 75%;
+  background-clip: text;
+}
+
+nav li a.connect {
+  color: #090101;
+  font-size: 24px;
+  font-weight: bold;
+  border: 2px solid #333;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #9BEC9E;
+  box-shadow: 3px 3px 3px #090101;
+}
+
+.name {
+  display: center;
+  font-size: 56px;
+  background-image: var(--background-image);
+  font-weight: bold;
+  background-clip: text;
+  color: transparent;
+  animation: moveBackground 3s infinite;
+}
+
+
+.menu-icon {
+  display: none;
+}
   
     .flexbox-container {
       margin: 5px;
@@ -97,7 +110,7 @@
       text-align: center;
       color: #090101;
       font-size: 32px;
-      border: 2px solid #333;
+      border: 2px solid #090101;
       border-radius: 12px;
       padding: 12px;
       background-color: #9BEC9E;
@@ -127,4 +140,135 @@
       color: #090101;
       padding: 10px;
     }
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+      }
+    
+      header {
+        border-bottom: 2px solid #090101;
+      }
+    
+      .menu-icon {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    
+      .menu-icon .material-icons {
+        font-size: 36px; 
+        color: #090101;
+      }
+    
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--primary-background);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        text-align: center;
+        border-bottom: 2px solid #090101;
+        padding: 10px 0;
+        z-index: 1000;
+      }
+    
+      .nav-links li {
+        margin: 14px 0;
+        font-size: 20px; 
+        padding: 14px;
+        border-bottom: 1px solid #090101;
+      }
+    
+      .nav-links li:last-child {
+        border-bottom: none; 
+      }
+    
+      .nav-links a {
+        color: #090101;
+      }
+    
+      #menu-toggle:checked ~ .nav-links {
+        display: flex;
+      }
+    
+      .menu-icon .bar {
+        background-color: #090101;
+        height: 6px;
+        width: 42px;
+        margin: 6px 0;
+        transition: 0.3s;
+      }
+    
+      #menu-toggle:checked ~ .menu-icon .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+    
+      #menu-toggle:checked ~ .menu-icon .bar:nth-child(2) {
+        opacity: 0;
+      }
+    
+      #menu-toggle:checked ~ .menu-icon .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+    
+      .flexbox-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .text {
+      margin: 4px;
+      width: 118%;
+      padding: 12px;
+      }
+
+    }
+    
+    @media (max-width: 480px) {
+      .name {
+        font-size: 45px;
+      }
+    
+      .menu-icon {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    
+      
+      .menu-icon .material-icons {
+        font-size: 52px;
+        color: #090101;
+      }
+    
+      .nav-links {
+        top: 70px;
+      }
+    
+      nav li a {
+        font-size: 24px; 
+      }
+      
+    }
+  
+    @keyframes moveBackground {
+      0% {
+          background-position: 80% 100%;
+      }
+      100% {
+          background-position: 0% 90%;
+      }
+    }
+   
     
