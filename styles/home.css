@@ -184,12 +184,22 @@ footer .social-links a:hover {
 
 
 @media (max-width: 768px) {
-  nav ul {
-    display: none;
+  .name {
+    font-size: 34px;
   }
 
-  header {
-    border-bottom: 2px solid #090101;
+  .menu-icon {
+    font-size: 1.5rem;
+    color: #090101;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    top: 70px;
+  }
+
+  nav li a {
+    font-size: 24px;
   }
 
   .menu-icon {
@@ -268,7 +278,7 @@ footer .social-links a:hover {
 
 @media (max-width: 480px) {
   .name {
-    font-size: 45px;
+    font-size: 34px;
   }
 
   .menu-icon {

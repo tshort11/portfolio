@@ -237,7 +237,7 @@ nav li a.connect {
     }
   
     .menu-icon .material-icons {
-      font-size: 36px; /* Adjusted for better visual balance */
+      font-size: 36px; 
       color: #090101;
     }
   
@@ -257,7 +257,7 @@ nav li a.connect {
   
     .nav-links li {
       margin: 14px 0;
-      font-size: 20px; /* Adjusted for smaller screens */
+      font-size: 20px; 
       padding: 14px;
       border-bottom: 1px solid #090101;
     }
@@ -304,7 +304,7 @@ nav li a.connect {
   
   @media (max-width: 480px) {
     .name {
-      font-size: 45px;
+      font-size: 34px;
     }
   
     .menu-icon {

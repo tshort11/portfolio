@@ -309,8 +309,7 @@ nav li a.connect {
   
   @media (max-width: 390px) {
     .name {
-      font-size: 45px;
-      text-align: center;
+      font-size: 34px;
     }
   
     .menu-icon {

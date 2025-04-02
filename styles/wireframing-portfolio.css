@@ -253,7 +253,7 @@ main {
   
     @media (max-width: 480px) {
       .name {
-        font-size: 45px;
+        font-size: 34px;
       }
       
       .menu-icon .material-icons {
