@@ -164,6 +164,10 @@ nav li a.connect {
       color: #9BEC9E;
     }
     @media (max-width: 768px) {
+      :root {
+        --background-image: url(../images/mobilebackground.jpg);
+        --primary-background: #FFF4F4;
+
       nav ul {
         display: none;
       }
@@ -255,6 +259,7 @@ nav li a.connect {
     }
     
     @media (max-width: 480px) {
+
       .name {
         font-size: 34px;
       }
@@ -292,4 +297,4 @@ nav li a.connect {
           background-position: 0% 90%;
       }
     }
-    
+  }

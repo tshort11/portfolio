@@ -184,6 +184,11 @@ footer .social-links a:hover {
 
 
 @media (max-width: 768px) {
+  :root {
+    --background-image: url(../images/mobilebackground.jpg);
+    --primary-background: #FFF4F4;
+  
+
   .name {
     font-size: 34px;
   }
@@ -329,4 +334,4 @@ footer .social-links a:hover {
     transform: translateY(0); 
   }
 }
-
+}

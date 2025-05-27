@@ -265,6 +265,10 @@ footer .social-links a:hover {
   }
 
 @media (max-width: 768px) {
+  :root {
+    --background-image: url(../images/Background.jpg);
+    --primary-background: #FFF4F4;
+  
   nav ul {
     display: none;
   }
@@ -346,6 +350,10 @@ footer .social-links a:hover {
 }
 
 @media (max-width: 480px) {
+  :root {
+  --background-image: url(../images/mobilebackground.jpg);
+  --primary-background: #FFF4F4;
+
   .name {
     font-size: 34px;
   }
@@ -393,4 +401,6 @@ footer .social-links a:hover {
   100% {
     background-position: 0% 90%;
   }
+}
+}
 }
