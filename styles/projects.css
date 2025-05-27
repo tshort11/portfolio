@@ -218,142 +218,161 @@ nav li a.connect {
     color: #9BEC9E;
   }
   
-  @media (max-width: 768px) {
-    :root {
-      --background-image: url(../images/mobilebackground.jpg);
-      --primary-background: #FFF4F4;
-
-    nav ul {
-      display: none;
-    }
-  
-    header {
-      border-bottom: 2px solid #090101;
-    }
-  
-    .menu-icon {
-      display: flex;
-      flex-direction: column;
-      cursor: pointer;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-    }
-  
-    .menu-icon .material-icons {
-      font-size: 36px; 
-      color: #090101;
-    }
-  
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      background-color: var(--primary-background);
-      position: absolute;
-      top: 70px;
-      left: 0;
-      text-align: center;
-      border-bottom: 2px solid #090101;
-      padding: 10px 0;
-      z-index: 1000;
-    }
-  
-    .nav-links li {
-      margin: 14px 0;
-      font-size: 20px; 
-      padding: 14px;
-      border-bottom: 1px solid #090101;
-    }
-  
-    .nav-links li:last-child {
-      border-bottom: none; /* Remove border for the last item */
-    }
-  
-    .nav-links a {
-      color: #090101;
-    }
-  
-    #menu-toggle:checked ~ .nav-links {
-      display: flex;
-    }
-  
-    .menu-icon .bar {
-      background-color: #090101;
-      height: 6px;
-      width: 42px;
-      margin: 6px 0;
-      transition: 0.3s;
-    }
-  
-    #menu-toggle:checked ~ .menu-icon .bar:nth-child(1) {
-      transform: rotate(-45deg) translate(-5px, 6px);
-    }
-  
-    #menu-toggle:checked ~ .menu-icon .bar:nth-child(2) {
-      opacity: 0;
-    }
-  
-    #menu-toggle:checked ~ .menu-icon .bar:nth-child(3) {
-      transform: rotate(45deg) translate(-5px, -6px);
-    }
-  
-    .flexbox-container {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 16px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .name {
-      font-size: 34px;
-    }
-  
-    .menu-icon {
-      display: flex;
-      flex-direction: column;
-      cursor: pointer;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-    }
-  
-    
-    .menu-icon .material-icons {
-      font-size: 52px;
-      color: #090101;
-    }
-  
-    .nav-links {
-      top: 70px;
-    }
-  
-    nav li a {
-      font-size: 24px; 
-    }
-    
-
-    .flexbox-container-1 {
-      margin: 5px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      overflow: auto;
-      gap: 25px;
-      padding: 45px;
-    }
-
+  /* ---------- Tablet & Small Desktop ---------- */
+@media (max-width: 768px) {
+  :root {
+    --background-image: url(../images/mobilebackground.jpg);
+    --primary-background: #FFF4F4;
   }
 
-  @keyframes moveBackground {
-    0% {
-        background-position: 80% 100%;
-    }
-    100% {
-        background-position: 0% 90%;
-    }
+  nav ul {
+    display: none;
+  }
+
+  header {
+    border-bottom: 2px solid #090101;
+  }
+
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .menu-icon .material-icons {
+    font-size: 36px;
+    color: #090101;
+  }
+
+  .menu-icon .bar {
+    background-color: #090101;
+    height: 6px;
+    width: 42px;
+    margin: 6px 0;
+    transition: 0.3s;
+  }
+
+  #menu-toggle:checked ~ .menu-icon .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  #menu-toggle:checked ~ .menu-icon .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu-toggle:checked ~ .menu-icon .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--primary-background);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    text-align: center;
+    border-bottom: 2px solid #090101;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+
+  .nav-links li {
+    margin: 14px 0;
+    font-size: 20px;
+    padding: 14px;
+    border-bottom: 1px solid #090101;
+  }
+
+  .nav-links li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-links a {
+    color: #090101;
+  }
+
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  .image-box {
+    padding: 16px;
+  }
+
+  .image-box img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .flexbox-container {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+  }
+}
+
+/* ---------- Mobile Phones ---------- */
+@media (max-width: 480px) {
+  .name {
+    font-size: 34px;
+  }
+
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .menu-icon .material-icons {
+    font-size: 52px;
+    color: #090101;
+  }
+
+  .nav-links {
+    top: 70px;
+  }
+
+  nav li a {
+    font-size: 24px;
+  }
+
+  .image-box {
+    padding: 16px;
+    border: none;
+    box-shadow: none;
+  }
+
+  .image-box img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .flexbox-container-1 {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    gap: 25px;
+    padding: 45px;
+  }
+}
+
+/* ---------- Background Animation ---------- */
+@keyframes moveBackground {
+  0% {
+    background-position: 80% 100%;
+  }
+  100% {
+    background-position: 0% 90%;
   }
 }

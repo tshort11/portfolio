@@ -186,11 +186,12 @@ main {
       :root {
         --background-image: url(../images/mobilebackground.jpg);
         --primary-background: #FFF4F4;
-
+      }
+    
       nav ul {
         display: none;
       }
-      
+    
       .menu-icon {
         display: flex;
         flex-direction: column;
@@ -199,12 +200,12 @@ main {
         top: 10px;
         right: 10px;
       }
-      
+    
       .menu-icon .material-icons {
         font-size: 36px;
         color: #090101;
       }
-      
+    
       .nav-links {
         display: none;
         flex-direction: column;
@@ -218,71 +219,80 @@ main {
         padding: 10px 0;
         z-index: 1000;
       }
-      
+    
       .nav-links li {
         margin: 14px 0;
         font-size: 20px;
         padding: 14px;
         border-bottom: 1px solid #090101;
       }
-      
+    
       .nav-links li:last-child {
         border-bottom: none;
       }
-      
+    
       .nav-links a {
         color: #090101;
       }
-      
+    
       #menu-toggle:checked ~ .nav-links {
         display: flex;
       }
-      
+    
       .flexbox-container {
         flex-direction: column;
         gap: 16px;
         padding: 20px;
       }
-      
+    
       .title {
         font-size: 24px;
+        max-width: 95%;
+        margin: 0 auto;
       }
     
       .text {
-        font-size: 18px;
-        padding: 20px;
+        font-size: clamp(16px, 4vw, 24px);
+        padding: clamp(16px, 5vw, 32px);
+        width: 75%;
+        max-width: 75%;
+        margin: 0 auto;
       }
     }
     
-  
     @media (max-width: 480px) {
       .name {
         font-size: 34px;
       }
-      
+    
       .menu-icon .material-icons {
         font-size: 52px;
       }
-      
+    
       .nav-links {
         top: 70px;
       }
-      
+    
       .nav-links li {
         font-size: 18px;
       }
-      
+    
       .flexbox-container {
         padding: 15px;
       }
-      
+    
       .title {
         font-size: 22px;
+        max-width: 92%;
+        margin: 0 auto;
       }
     
       .text {
-        font-size: 16px;
-        padding: 15px;
+        font-size: clamp(16px, 4vw, 24px);
+        padding: clamp(16px, 5vw, 32px);
+        width: 75%;
+        max-width: 90%;
+        margin: 0 auto;
       }
     }
     
@@ -294,15 +304,4 @@ main {
         background-position: 0% 90%;
       }
     }
-
-
-    @keyframes moveBackground {
-      0% {
-          background-position: 80% 100%;
-      }
-      100% {
-          background-position: 0% 90%;
-      }
-    }
-  }
-  
+    
