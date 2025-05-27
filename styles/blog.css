@@ -292,7 +292,7 @@ nav li a.connect {
     }
   
     .flexbox-container {
-      flex-direction: column;
+      flex-direction: column; 
       justify-content: center;
       align-items: center;
       gap: 16px;
