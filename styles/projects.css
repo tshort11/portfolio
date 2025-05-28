@@ -283,7 +283,7 @@ nav li a.connect {
 
   .nav-links li {
     margin: 14px 0;
-    font-size: 20px;
+    font-size: 2px;
     padding: 14px;
     border-bottom: 1px solid #090101;
   }
@@ -298,6 +298,19 @@ nav li a.connect {
 
   #menu-toggle:checked ~ .nav-links {
     display: flex;
+  }
+
+  .error  {
+    margin: 8px;
+    text-align: center;
+    color: #090101;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 12px;
+    padding: 8px;
+    background-color: #9BEC9E;
+    box-shadow: 3px 3px 3px  #090101;
+    display: inline-block;
   }
 
   .image-box {
