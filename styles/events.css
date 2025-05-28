@@ -272,6 +272,18 @@ footer .social-links a:hover {
   #menu-toggle:checked ~ .menu-icon .bar:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
   }
+  .intro {
+    margin: 7px 0;
+    text-align: center;
+    color: #090101;
+    font-size: 24px;
+    border: 2px solid #333;
+    border-radius: 12px;
+    padding: 6px;
+    background-color: #9BEC9E;
+    box-shadow: 3px 3px 3px  #090101;
+    display: inline-block;
+  }
 
   .flexbox-container {
     flex-direction: column;
