@@ -281,8 +281,8 @@ footer .social-links a:hover {
   }
 
   .images img {
-    max-width: 85%;
-    border-radius: 10px;
+    max-width: 55%;
+    border-radius: 15px;
     box-shadow: 10px 10px 10px #090101;
     animation: fadeIn 2s ease-out;
     display: block;
@@ -308,6 +308,35 @@ footer .social-links a:hover {
   nav li a {
     font-size: 24px;
   }
+
+  .intro {
+    position: relative;
+    background: #9BEC9E;
+    border: 2px solid #090101;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 600px;
+    font-size: 18px;
+    color: #090101;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+  }
+  
+  /* Add the tail */
+  .intro::after {
+    content: "";
+    position: absolute;
+    top: -9px; /* Adjust if needed */
+    left: 40px;    /* Position of the tail */
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top-color: #9BEC9E;
+    border-bottom: 0;
+    margin-left: -10px;
+    transform: rotate(180deg);
+  }
+  
 
   .flexbox-container {
     padding: 10px;
