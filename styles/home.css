@@ -281,8 +281,10 @@ footer .social-links a:hover {
   }
 
   .images img {
-    max-width: 55%;
-    border-radius: 15px;
+    width: 250px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 50%; 
     box-shadow: 10px 10px 10px #090101;
     animation: fadeIn 2s ease-out;
     display: block;
