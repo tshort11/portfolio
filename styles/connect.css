@@ -327,6 +327,27 @@ footer .social-links a:hover {
     align-items: center;
     gap: 16px;
   }
+  .question {
+     font-size: 20px;
+     margin: 16px;
+}
+.faq-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+  font-size: 18px;
+  max-width: 1000px;
+  width: 100%;
+  background-color: #9BEC9E;
+  border: 2px solid #090101;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px #090101;
+  padding: 20px;
+  position: relative;
+}
+
+
 }
 
 @media (max-width: 480px) {

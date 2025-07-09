@@ -286,6 +286,36 @@ nav li a.connect {
       nav li a {
         font-size: 24px; 
       }
+
+      .title {
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+        color: #090101;
+        font-size: 16px;
+        border: 2px solid #090101;
+        border-radius: 12px;
+        padding: 6px;
+        background-color: #9BEC9E;
+        box-shadow: 3px 3px 3px  #090101;
+        display: inline-block;
+      }
+    
+      .text {
+        margin: 18px;
+        width: 80%;
+        text-align: left;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*change this*/
+        color: #090101;
+        font-size: 16px;
+        border: 2px solid #090101;
+        border-radius: 12px;
+        padding: 42px;
+        background-color: #9BEC9E;
+        box-shadow: 3px 3px 3px #090101;
+        display: inline-block;
+        position: relative; 
+      }
       
     }
   

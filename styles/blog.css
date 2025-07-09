@@ -111,20 +111,20 @@ nav li a.connect {
     font-size: 36px;
     border: 2px solid #333;
     border-radius: 12px;
-    padding: 18px;
+    padding: 10px;
     background-color: #9BEC9E;
     box-shadow: 3px 3px 3px  #090101;
     display: inline-block;
   }
 
-  .about, .intro  {
+ .intro  {
     margin: 10px;
     text-align: center;
     color: #090101;
     font-size: 22px;
     border: 2px solid #333;
     border-radius: 12px;
-    padding: 18px;
+    padding: 10px;
     background-color: #9BEC9E;
     box-shadow: 3px 3px 3px  #090101;
     display: inline-block;

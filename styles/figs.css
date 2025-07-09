@@ -163,6 +163,7 @@ nav li a.connect {
     footer .social-links a:hover {
       color: #9BEC9E;
     }
+
     @media (max-width: 768px) {
       :root {
         --background-image: url(../images/mobilebackground.jpg);
@@ -250,10 +251,34 @@ nav li a.connect {
         gap: 16px;
       }
 
+      .title {
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+        color: #090101;
+        font-size: 16px;
+        border: 2px solid #090101;
+        border-radius: 12px;
+        padding: 6px;
+        background-color: #9BEC9E;
+        box-shadow: 3px 3px 3px  #090101;
+        display: inline-block;
+      }
+    
       .text {
-      margin: 4px;
-      width: 118%;
-      padding: 12px;
+        margin: 18px;
+        width: 100%;
+        text-align: left;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*change this*/
+        color: #090101;
+        font-size: 16px;
+        border: 2px solid #090101;
+        border-radius: 12px;
+        padding: 10px;
+        background-color: #9BEC9E;
+        box-shadow: 3px 3px 3px #090101;
+        display: inline-block;
+        position: relative; 
       }
 
     }
