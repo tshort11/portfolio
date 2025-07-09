@@ -105,7 +105,7 @@ nav li a.connect {
     padding: 35px;
   }
 
-  .about, .error  {
+  .about  {
     margin: 10px;
     text-align: center;
     color: #090101;
@@ -116,6 +116,34 @@ nav li a.connect {
     background-color: #9BEC9E;
     box-shadow: 3px 3px 3px  #090101;
     display: inline-block;
+  }
+
+  .a {
+    margin: 10px;
+    text-align: center;
+    color: #090101;
+    font-size: 22px;
+    border: 2px solid #333;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: #9BEC9E;
+    box-shadow: 3px 3px 3px  #090101;
+    display: inline-block;
+  }
+
+  .b {
+    margin: 14px 0;
+    text-align: center;
+    color: #090101;
+    font-size: 14px;
+    border: 2px solid #333;
+    border-radius: 12px;
+    padding: 8px;
+    background-color: #9BEC9E;
+    box-shadow: 3px 3px 3px #090101;
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 3.5s ease-out forwards;
   }
 
   .flexbox-container-1 {
@@ -138,8 +166,8 @@ nav li a.connect {
     overflow: hidden; 
     transition: transform 0.3s ease; 
     vertical-align: top;
-    width: 400px; 
-    height: 350px; 
+    width: 350px; 
+    height: 250px; 
     display: center;
     align-items: center;
     justify-content: center;
@@ -217,7 +245,12 @@ nav li a.connect {
   footer .social-links a:hover {
     color: #9BEC9E;
   }
-  
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
   /* ---------- Tablet & Small Desktop ---------- */
 @media (max-width: 768px) {
   :root {
@@ -300,17 +333,38 @@ nav li a.connect {
     display: flex;
   }
 
-  .error  {
+  .a  {
     margin: 4px 0;
     text-align: center;
     color: #090101;
-    font-size: 20px;
+    font-size: 18px;
     border: 2px solid #333;
     border-radius: 12px;
     padding: 8px;
     background-color: #9BEC9E;
     box-shadow: 3px 3px 3px  #090101;
     display: inline-block;
+  }
+
+  .b {
+    margin: 14px 0;
+    text-align: center;
+    color: #090101;
+    font-size: 14px;
+    border: 2px solid #333;
+    border-radius: 12px;
+    padding: 8px;
+    background-color: #9BEC9E;
+    box-shadow: 3px 3px 3px #090101;
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 3.5s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
   }
 
   .image-box {

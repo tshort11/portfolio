@@ -136,22 +136,21 @@ main {
     }
   
     .text {
-      margin: 18px;
-      width: 80%;
+      margin: 10px;
+      width: 35%;
       text-align: center;
       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*change this*/
       color: #090101;
       font-size: 24px;
       border: 2px solid #090101;
       border-radius: 12px;
-      padding: 42px;
+      padding: 18px;
       background-color: #9BEC9E;
       box-shadow: 3px 3px 3px #090101;
       display: inline-block;
       position: relative; 
       animation: fadeIn 2s ease-out;
     }
-  
     
     footer {
       background-color: var(--primary-background);
